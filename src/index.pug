@@ -1,0 +1,218 @@
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Insite
+        link(rel="stylesheet", type="text/css", href="./css/style.css")
+        link(rel="shortcut icon", type="image/ico", href="assets/img/logo.png")
+    header
+        .container
+            img.main_logo(src="assets/img/L.png")
+            .menu-btn
+                span
+                span
+                span
+            .header_block
+                .language-box
+                    a(href="#", script-role="change-lang", lang="ru") eng
+                    p /
+                    a(href="#", script-role="change-lang", lang="en").active рус
+                img.logo(src="assets/img/logo.png")
+                .nav
+                    a(script-role="scroll-menu" class="btn banner_btn" href="#about")
+                        p о нас
+                    a(script-role="scroll-menu" class="btn banner_btn" href="#projects")
+                        p проекты
+                    a(script-role="scroll-menu" class="btn banner_btn" href="#contact")
+                        p связаться с нами
+    body
+        .container
+            .main-block
+                .main_text_block
+                    h1 Качественно выполняем
+                    span.dev разработку
+                    span.shop интернет-магазина
+        .container#about
+            .about
+                h2 о нас
+                .about_text_block
+                    p.about_text_item_block Наша команда состоит из людей с весомым опытом, за годы работы мы допустили почти все ошибки и знаем как надо и не надо делать. Мы считаем дизайн и удобство интерфейса первым и основным, над чем следует работать, а стабильный код — обязательным гигиеническим условием.
+                    p.about_text_item_block Мы используем методологии и технологии производства, позволяющие снизить количество дефектов с самого начала и быстро доводить продукты до готовности.
+        .container
+            .desc
+                .desc_item
+                    h3 дизайн
+                    p Создаем сложные интерактивные дизайн-системы, которыми удобно пользоваться. Проводим полный цикл работ от аналитики и проектирования до анимации интерфейса.
+                .desc_item
+                    h3 разработка
+                    p Занимаемся разработкой сервисов различной функциональности и масштабов. Создаем программное обеспечение, тестируем и запускаем проекты. Обеспечиваем поддержку и развитие.
+                .desc_item
+                    h3 консалтинг
+                    p Объясним, как увеличить конверсию сделок, посредством грамотной аналитики. Покажем, как правильно подать клиенту информацию о вашей компании.
+        .container#projects
+            .projects
+                h2 проекты
+                .projects_box
+                    .projects_item_box_first
+                        .projects_title_box
+                            p дизайн
+                            p разработка
+                        .link
+                            a(href="https://olsta.ru" target="_blanc") olsta.ru
+                    .projects_item_box_sec
+                        .projects_title_box
+                            p дизайн
+                            p разработка
+                        .link
+                            a(href="https://bayramix.ru" target="_blanc") bayramix.ru
+                    .projects_item_box_third
+                        .projects_title_box
+                            p дизайн
+                            p разработка
+                        .link
+                            a(href="https://calipsoshoes.ru" target="_blanc") calipsoshoes.ru
+                    .projects_item_box_forth
+                        .projects_title_box
+                            p дизайн
+                            p разработка
+                        .link
+                            a(href="https://decorazza.ru" target="_blanc") decorazza.ru
+                    .projects_item_box_fifth
+                        .projects_title_box
+                            p дизайн
+                            p разработка
+                        .link
+                            a(href="https://details-shop.ru" target="_blanc") details-shop.ru
+    footer#contact
+        .container
+            .contacts
+                h2 связаться с нами
+                .soc_box
+                    .soc_box_item
+                        a(href="mailto:work@insite.com" target="_blanc") work@insite.com
+                    .soc_box_item
+                        a(href="https://telegram.org" target="_blanc") telegram
+
+script.
+    var localize = {
+        'en': {
+            'title': 'CREATING VALUE TOGETHER',
+            'subtitle': 'Decentralized community of seasoned professionals',
+            'subtitle-1': 'The platform that puts together companies and solid professionals to solve complex corporate finance, M&A, equity investment and business development issues. <br><br>With strong multinational background and professional experience, our experts can approach your cases with full dedication and thus will deliver efficient results within time deadlines.',
+            'desc_subtitle-1': 'Serving as both financial and strategic advisers, we can also provide strong support in improving your operational processes. By overtaking intermediate positions in your business, we structure your processes, making them transparent and efficient. Afterwards, we help attracting right people and let your see your business growing.',
+            'desc_subtitle-2': 'For us helping in structuring your business means structuring your finances, evaluating your business development strategies and working out plans that will lead to increase in the value of your business. Value of the business – it all that matters to us.',
+            'desc_subtitle-3': 'How we do that? We bring right people into the right situations. We do not simply connect anyone to our platform, but only experienced professionals who bring ethical values, creative mindset and great knowledge in the field of finance, technology and law.',
+            'desc_subtitle-4': 'Our difference to classical advisory and investment banking services? We are independent, flexible and can pick up your case at any point. We will not try to provide our services; we either provide them in extraordinary manner or not at all.',
+            'menu-item-1': 'ABOUT CROSSDEAL',
+            'menu-item-2': 'ADVISORY SERVICES',
+            'menu-item-3': 'OUR TEAM',
+            'menu-item-4': 'CASES',
+            'menu-item-5': 'CONTACT US',
+            'btn-title-1': 'CALLBACK',
+            'btn-title-2': 'READ MORE',
+            'title-description': 'ABOUT CROSSDEAL',
+            
+            'text-description-1': 'In tough times for economy, companies attempt to maintain their cash flow position and start to play with their operating expenses. Salaries reduction and firing are on daily schedule. This may bring some relief to a company but will not solve its problems in mid and long-term run. Besides, firing employees is often a costly program not only in terms of money, but also in terms of timing and energy.<br><br>Try to avoid that by building your operational system in such way as if you expect the crisis to come tomorrow. The general mistake of companies is that they are trying to save money at the time when they do not have any money, instead of starting it early enough.<br><br><br><br><br><br>',
+            
+            'text-description-2': 'Getting right people tied to your projects and focused on the execution of the strategy is the most difficult assignment. People like taking time enjoying constant monthly salaries without setting any deadlines.<br><br>We do it differently. We set realistic deadlines for execution of your projects as we want to pick up our success fee as soon as possible. Win–win situation for all participants.',
+
+            'title-competition': 'ADVISORY SERVICES',
+            'text-competition-1': 'Business, Restructuring & Development Strategies',
+            'text-competition-2': 'Corporate Finance',
+            'text-competition-3': 'Legal',
+            'text-competition-4': 'IT',
+            'text-competition-5': 'Cash Flow<br> Management',
+            'text-competition-6': 'Fundraising',
+            'text-competition-7': 'Market Research & Analytics',
+            'text-competition-8': 'Interim Management',
+
+            'title-team': 'OUR TEAM',
+            'text-team-1': 'Seasoned professionals with long–term local and international business experience',
+            //- 'text-team-2': '2. Prunes the personnel budget including the accompanying expenses: taxes, social transfers, compensations and overheads<br><br>',
+            //- 'text-team-3': '3. Provides significantly more flexible terms in comparison with large consulting firms',
+
+            'title-deal': 'CASES',
+            'text-deal-1': '<b>Structuring of the acquisition</b> of a controlling share in the project of construction of a gas power station in Israel.',
+            'text-deal-2': '<b>Structuring of the merger</b> of European and Russian film production, distribution and licensing assets into a single international media holding and the <b>subsequent buy-side support</b> for the acquisition of its stake by Investor (30M USD).',
+            'text-deal-3': '<b>Attraction of the Investor</b> to the acquirement of a controlling share in a Russian leasing company and the <b>subsequent organization of debt financing</b> (1M EUR).',
+            'text-deal-4': '<b>Analysis of the Russian market</b> of digital photo services and products for a Bulgarian investment fund.',
+            'text-deal-5': 'Development of <b>LBO model</b> for the acquirement of a US technological company by a Russian investor.',
+            'text-deal-6': 'Development of <b>White Paper</b> for the Russo - Korean blockchain project.',
+            'text-deal-7': '<b>Restructuring</b> of a large Russian construction and development group: creating of Corporate Finance and Legal departments as well as Procurement and Logistics department; <b>subsequent operational management</b> of the above-mentioned departments until <b>the approval of the credit line</b> by one of the leading Russian banks (unsecured debt financing in amount of 100M RUR).',
+            'text-deal-8': '<b>Valuation</b> of one of the leading Eastern-European air carriers for a Russian investor.',
+            'text-deal-9': '<b>Internal Audit</b> and subsequent three-years development strategy for a largest bank of a CIS country.',
+            'text-deal-10': '<b>Valuation</b> of a private Russian air carrier for a European investor.',
+            'text-deal-11': '<b>Fund Raising in form of debt financing</b> (two major credit lines) for a Russian construction project (4.5 bln RUR).',
+            'text-deal-12': 'Attraction of a European bank to <b>the financing</b> of a Russian construction project (42M EUR).',
+            'text-deal-13': 'Development of <b>the strategy and legal support</b> for a large Russian developer (48M RUR of compensation to the client under court decision).',
+
+            'title-communication': 'CONTACT US',
+
+            'title-contact': 'CONTACTS',
+
+            'text-form': 'Thank you for order!',
+        },
+        'ru': {
+            'title': 'СОВМЕСТНО СОЗДАВАЯ СТОИМОСТЬ',
+            'subtitle': 'Децентрализованное сообщество профессионалов',
+            'subtitle-1': 'Платформа, объединяющая компании и высококвалифицированных специалистов для решения комплексных задач в области корпоративных финансов, слияний и поглощений, прямых инвестиций и развития бизнеса.<br><br>Профессионализм и международным опыт помогают нашим экспертам подойти к Вашей задаче с полной вовлеченностью и добиться эффективных результатов в ограниченных временных рамках.',
+            'desc_subtitle-1': 'Выступая одновременно финансовыми и стратегическими консультантами, мы также обеспечиваем необходимую поддержку для улучшения операционных процессов. Временно занимая позиции в Вашей компании, мы структурируем ее бизнес-процессы, делаем их прозрачными и эффективными. Мы далее помогаем подобрать соответствующие кадры для последующего управления.',
+            'desc_subtitle-2': 'В нашем понимании структурирование Вашего бизнеса означает структурирование его финансов, оценку стратегий развития и выработку плана роста стоимости. Рост стоимости бизнеса – наша единственная цель.',
+            'desc_subtitle-3': 'Как мы этого добиваемся? Мы предоставляем нужных людей под конкретную ситуацию. Мы не подключаем не проверенных специалистов к нашей платформе. К ней имеют доступ только зарекомендовавшие себя профессионалы с глубоким пониманием этических норм, креативным мышлением и обширными познаниями в области бизнеса, финансов, информационных технологий, права.',
+            'desc_subtitle-4': 'Чем мы отличаемся от классических консультантов или инвестиционных банков? Мы независимы и мобильны, можем приступить к выполнению Вашей задачи на любой стадии. Мы не будем пытаться «продавать» Вам свои услуги: мы либо выполняем поставленные перед нами задачи системными методами, либо не приступаем к ним.',
+            'menu-item-1': 'О CROSSDEAL',
+            'menu-item-2': 'НАШИ УСЛУГИ',
+            'menu-item-3': 'НАША КОМАНДА',
+            'menu-item-4': 'ПРИМЕРЫ СДЕЛОК',
+            'menu-item-5': 'КОНТАКТЫ',
+            'btn-title-1': 'ЗАКАЗАТЬ ЗВОНОК',
+            'btn-title-2': 'ЧИТАТЬ БОЛЬШЕ',
+            'title-description': 'О CROSSDEAL',
+            
+            'text-description-1': 'В тяжелые для экономики времена компании стремятся сохранить свои денежные потоки и начинают экспериментировать с операционными издержками. Снижение зарплат и увольнения выходят на повестку дня. Это может доставить некоторое облегчение для бизнеса, но не решит его проблемы в средне- и долгосрочной перспективе. К тому же, сокращение сотрудников представляет собой зачастую затратный процесс не только, с точки зрения финансов, но и времени и энергии.<br><br>Постарайтесь избежать этого при помощи построения Ваших операционных процессов таким образом, будто кризис наступит завтра. Общая проблема большинства компаний – это стремление сберечь деньги тогда, когда их уже нет вместо того, чтобы начать это делать на более ранней стадии.<br><br>',
+            
+            'text-description-2': 'Привести в Ваш проект нужных людей, сфокусированных на достижении стратегической цели – самая тяжелая задача. Сотрудники зачастую чувствуют себя комфортно, тратя чужое время, получая стабильную зарплату и не соблюдая временные рамки.<br><br>Мы поступаем иначе. Мы задаем реальные временные параметры для выполнения Вашего проекта, так как чем раньше мы достигнем успеха, тем раньше мы получим свое вознаграждение. Мы за принцип «win-win».',
+
+            'title-competition': 'НАШИ УСЛУГИ',
+            'text-competition-1': 'Стратегии по бизнесу, его реструктуризации и развитию',
+            'text-competition-2': 'Корпоративные финансы',
+            'text-competition-3': 'Правовое сопровождение',
+            'text-competition-4': 'ИТ-решения',
+            'text-competition-5': 'Управление денежными потоками',
+            'text-competition-6': 'Привлечение финансирования',
+            'text-competition-7': 'Исследование и анализ рынков',
+            'text-competition-8': 'Временное управление',
+
+            'title-team': 'НАША КОМАНДА',
+            'text-team-1': 'Команда профессионалов с богатым опытом работы на местном и международном рынке',
+            //- 'text-team-2': '2. Экономит расходы компаний на персонал: налоги, отчисления, компенсации, больничные и отпускные<br><br>',
+            //- 'text-team-3': '3. Предоставляет значительно более гибкие условия в сравнении с крупными консалтинговыми компаниями',
+
+            'title-deal': 'ПРИМЕРЫ СДЕЛОК',
+            'text-deal-1': '<b>Структурирование сделки</b> по приобретению контрольной доли в проекте строительства газовой электростанции в Израиле.',
+            'text-deal-2': '<b>Структурирование сделки</b> по объединению европейских и российских кинопроизводственных, дистрибьютерских и лицензионных активов в единый международный медиа-холдинг и последующее <b>сопровождение по приобретению его доли Инвестором</b> (30 млн. дол. США).',
+            'text-deal-3': '<b>Привлечение Инвестора</b> на приобретение контрольной доли в российской лизинговой компании и последующая <b>организация долгового финансирования</b> (1 млн. евро).',
+            'text-deal-4': 'Проведение <b>анализа российского рынка</b> цифровых фотоуслуг и фотопродуктов для болгарского инвестиционного фонда.',
+            'text-deal-5': 'Разработка <b>LBO модели</b> на приобретение американской ИТ-компании российским Инвестором.',
+            'text-deal-6': 'Разработка <b>White Paper</b> для российско-корейского блокчейн-проекта.',
+            'text-deal-7': '<b>Реструктуризация</b> крупной российской строительной и девелоперской группы: создание финансового и юридического департаментов, департамента материально-технического обеспечения; и их <b>операционное управление до момента получения кредитной линии</b> (100 млн. руб. беззалогового кредита).',
+            'text-deal-8': '<b>Оценка</b> крупной восточноевропейской авиакомпании для российского Инвестора.',
+            'text-deal-9': 'Проведение <b>внутреннего аудита</b> и последующая <b>разработка стратегии развития</b> на 3 года крупнейшего банка одной из стран СНГ.',
+            'text-deal-10': '<b>Оценка</b> частной российской авиакомпании для европейского Инвестора.',
+            'text-deal-11': '<b>Привлечение 2 крупных кредитных линий</b> для российского строительного проекта (4.5 млрд. руб.).',
+            'text-deal-12': '<b>Привлечение европейского банка на кредитование</b> российского строительного проекта (42 млн. евро).',
+            'text-deal-13': '<b>Разработка стратегии</b> и <b>юридическое сопровождение</b> крупной российской девелоперской компании (48 млн. руб. общей компенсации по решению суда).',
+
+            'title-communication': 'СВЯЗАТЬСЯ С НАМИ',
+
+            'title-contact': 'КОНТАКТЫ',
+
+            'text-form': 'Спасибо за заявку!',
+
+        }
+    }
+
+script(src="./js/jquery-3.3.1.min.js")
+script(src="./js/jquery.mask.js")
+script(src="./js/jquery.validate.min.js")
+script(src="./js/app.js")
