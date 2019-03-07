@@ -7,6 +7,7 @@
     width 100%
     max-width 1280px
     margin 0 auto
+    position relative
 @media (min-width: 768px) and (max-width: 1024px)
   .container 
     padding: 0 26px
@@ -23,13 +24,20 @@ header
         position absolute
         top 0
         background: transparent;
-        z-index: -1;
+        z-index 1
+        cursor pointer
+    .first_show
+        left -4%
+    .sec_show
+        left -5%
+    .third_show
+        left -6%
     .menu-btn
         display none
     .header_block
         display flex
         justify-content space-between
-        border-bottom 2px solid #000
+        //border-bottom 2px solid #000
         padding 30px 0
         width 1280px
         position fixed
@@ -51,7 +59,15 @@ header
             width 30%
             justify-content space-between
             a
-                font-family 'IBM-Light'           
+                font-family 'IBM-Light'
+    .border
+        height 2px
+        width 100%
+        background-color black
+        position fixed
+        top 78px
+        max-width inherit
+        z-index 10           
 body
     background-color #E5E5E5;
     .main-block
@@ -104,8 +120,14 @@ body
                 font-size: 20px;
                 color: #000000;
                 margin 0 23px
+    .border_about
+        position absolute
+        height 2px
+        width 100%
+        background-color black
+        max-width inherit
     .desc
-        border-top 2px solid black
+        //border-top 2px solid black
         display flex
         justify-content space-between
         align-items center
@@ -129,6 +151,23 @@ body
     .projects
         display flex
         padding-bottom 192px
+        position relative
+        .absolute_photo
+            display none
+            .absolute_photo_f
+                box-shadow 15px 15px 0px #C62040
+                position absolute
+                left 0
+                top 15%
+            .absolute_photo_s
+                position absolute
+                left 15%
+                top 65%
+            .absolute_photo_t
+                box-shadow 15px 15px 0px #000
+                position absolute
+                right 0
+                top 30%
         h2
             font-family "Gosha"
             font-size 96px

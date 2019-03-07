@@ -4,85 +4,94 @@ html(lang="ru")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title Insite
         link(rel="stylesheet", type="text/css", href="./css/style.css")
+        link(rel="stylesheet", type="text/css", href="./css/animate.css")
         link(rel="shortcut icon", type="image/ico", href="assets/img/logo.png")
     header
         .container
-            img.main_logo(src="assets/img/L.png")
+            img.main_logo.first_show(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s" src="assets/img/1.png")
+            img.main_logo.sec_show(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s" src="assets/img/2.png")
+            img.main_logo.third_show(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2.5s" src="assets/img/3.png")
             .menu-btn
                 span
                 span
                 span
             .header_block
-                .language-box
+                .language-box(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s")
                     a(href="#", script-role="change-lang", lang="ru") eng
                     p /
                     a(href="#", script-role="change-lang", lang="en").active рус
-                img.logo(src="assets/img/logo.png")
-                .nav
+                img.logo(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" src="assets/img/logo.png")
+                .nav(class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s")
                     a(script-role="scroll-menu" class="btn banner_btn" href="#about")
                         p о нас
                     a(script-role="scroll-menu" class="btn banner_btn" href="#projects")
                         p проекты
                     a(script-role="scroll-menu" class="btn banner_btn" href="#contact")
                         p связаться с нами
+            .border(class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" src="assets/img/1.png")
     body
         .container
             .main-block
                 .main_text_block
-                    h1 Качественно выполняем
-                    span.dev разработку
-                    span.shop интернет-магазина
+                    h1(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2.5s") Качественно выполняем
+                    span.dev(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="3s") разработку
+                    span.shop(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="3.2s") интернет-магазина
         .container#about
             .about
-                h2 о нас
+                h2(class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s") о нас
                 .about_text_block
-                    p.about_text_item_block Наша команда состоит из людей с весомым опытом, за годы работы мы допустили почти все ошибки и знаем как надо и не надо делать. Мы считаем дизайн и удобство интерфейса первым и основным, над чем следует работать, а стабильный код — обязательным гигиеническим условием.
-                    p.about_text_item_block Мы используем методологии и технологии производства, позволяющие снизить количество дефектов с самого начала и быстро доводить продукты до готовности.
+                    p.about_text_item_block(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s") Наша команда состоит из людей с весомым опытом, за годы работы мы допустили почти все ошибки и знаем как надо и не надо делать. Мы считаем дизайн и удобство интерфейса первым и основным, над чем следует работать, а стабильный код — обязательным гигиеническим условием.
+                    p.about_text_item_block(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s") Мы используем методологии и технологии производства, позволяющие снизить количество дефектов с самого начала и быстро доводить продукты до готовности.
+            .border_about(class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" src="assets/img/1.png")
         .container
             .desc
-                .desc_item
+                .desc_item(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s")
                     h3 дизайн
                     p Создаем сложные интерактивные дизайн-системы, которыми удобно пользоваться. Проводим полный цикл работ от аналитики и проектирования до анимации интерфейса.
-                .desc_item
+                .desc_item(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s")
                     h3 разработка
                     p Занимаемся разработкой сервисов различной функциональности и масштабов. Создаем программное обеспечение, тестируем и запускаем проекты. Обеспечиваем поддержку и развитие.
-                .desc_item
+                .desc_item(class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s")
                     h3 консалтинг
                     p Объясним, как увеличить конверсию сделок, посредством грамотной аналитики. Покажем, как правильно подать клиенту информацию о вашей компании.
         .container#projects
             .projects
-                h2 проекты
+                h2(class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s") проекты
+                .absolute_photo
+                    img.absolute_photo_f(src="assets/img/Rectangle 2.png")
+                    img.absolute_photo_t(src="assets/img/Rectangle 2.1.png")
+                    img.absolute_photo_s(src="assets/img/Rectangle 2.3.png")
                 .projects_box
                     .projects_item_box_first
                         .projects_title_box
                             p дизайн
                             p разработка
                         .link
-                            a(href="https://olsta.ru" target="_blanc") olsta.ru
+                            a(href="#" target="_blanc") olsta.ru
                     .projects_item_box_sec
                         .projects_title_box
                             p дизайн
                             p разработка
                         .link
-                            a(href="https://bayramix.ru" target="_blanc") bayramix.ru
+                            a(href="#" target="_blanc") bayramix.ru
                     .projects_item_box_third
                         .projects_title_box
                             p дизайн
                             p разработка
                         .link
-                            a(href="https://calipsoshoes.ru" target="_blanc") calipsoshoes.ru
+                            a(href="#" target="_blanc") calipsoshoes.ru
                     .projects_item_box_forth
                         .projects_title_box
                             p дизайн
                             p разработка
                         .link
-                            a(href="https://decorazza.ru" target="_blanc") decorazza.ru
+                            a(href="#" target="_blanc") decorazza.ru
                     .projects_item_box_fifth
                         .projects_title_box
                             p дизайн
                             p разработка
                         .link
-                            a(href="https://details-shop.ru" target="_blanc") details-shop.ru
+                            a(href="#" target="_blanc") details-shop.ru
     footer#contact
         .container
             .contacts
@@ -215,4 +224,5 @@ script.
 script(src="./js/jquery-3.3.1.min.js")
 script(src="./js/jquery.mask.js")
 script(src="./js/jquery.validate.min.js")
+script(src="./js/wow.min.js")
 script(src="./js/app.js")

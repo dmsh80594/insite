@@ -370,6 +370,7 @@ template {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
@@ -391,7 +392,17 @@ header .main_logo {
   position: absolute;
   top: 0;
   background: transparent;
-  z-index: -1;
+  z-index: 1;
+  cursor: pointer;
+}
+header .first_show {
+  left: -4%;
+}
+header .sec_show {
+  left: -5%;
+}
+header .third_show {
+  left: -6%;
 }
 header .menu-btn {
   display: none;
@@ -401,7 +412,6 @@ header .header_block {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: 2px solid #000;
   padding: 30px 0;
   width: 1280px;
   position: fixed;
@@ -434,6 +444,15 @@ header .header_block .nav {
 }
 header .header_block .nav a {
   font-family: 'IBM-Light';
+}
+header .border {
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 78px;
+  max-width: inherit;
+  z-index: 10;
 }
 body {
   background-color: #e5e5e5;
@@ -502,8 +521,14 @@ body .about .about_text_block p {
   color: #000;
   margin: 0 23px;
 }
+body .border_about {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  max-width: inherit;
+}
 body .desc {
-  border-top: 2px solid #000;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -535,6 +560,27 @@ body .projects {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 192px;
+  position: relative;
+}
+body .projects .absolute_photo {
+  display: none;
+}
+body .projects .absolute_photo .absolute_photo_f {
+  box-shadow: 15px 15px 0px #c62040;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+body .projects .absolute_photo .absolute_photo_s {
+  position: absolute;
+  left: 15%;
+  top: 65%;
+}
+body .projects .absolute_photo .absolute_photo_t {
+  box-shadow: 15px 15px 0px #000;
+  position: absolute;
+  right: 0;
+  top: 30%;
 }
 body .projects h2 {
   font-family: "Gosha";
